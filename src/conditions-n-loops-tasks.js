@@ -22,11 +22,11 @@
  *  -5 => false
  */
 function isPositive(number) {
-  if (!number) {
-    throw new Error('Not implemented');
-  }
   if (number >= 0) {
     return true;
+  }
+  if (!number) {
+    throw new Error('Not implemented');
   }
   return false;
 }
