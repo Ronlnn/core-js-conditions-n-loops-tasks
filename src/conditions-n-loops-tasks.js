@@ -25,9 +25,6 @@ function isPositive(number) {
   if (number >= 0) {
     return true;
   }
-  if (!number) {
-    throw new Error('Not implemented');
-  }
   return false;
 }
 
@@ -53,9 +50,6 @@ function getMaxNumber(a, b, c) {
   } else {
     max = c;
   }
-  if (!a || !b || !c) {
-    throw new Error('Not implemented');
-  }
   return max;
 }
 
@@ -79,9 +73,6 @@ function getMaxNumber(a, b, c) {
  * {x: 1, y: 1}, {x: 2, y: 8} => false
  */
 function canQueenCaptureKing(queen, king) {
-  if (!queen || !king) {
-    throw new Error('Not implemented');
-  }
   if (queen.x === king.x) {
     return true;
   }
@@ -213,9 +204,6 @@ function convertToRomanNumerals(num) {
  *  '1950.2'  => 'one nine five zero point two'
  */
 function convertNumberToString(numberStr) {
-  if (!numberStr) {
-    throw new Error('Not implemented');
-  }
   let result = '';
   for (let i = 0; i < numberStr.length; i += 1) {
     if (i > 0) {
@@ -308,9 +296,6 @@ function isPalindrome(str) {
  *  'qwerty', 'p'     => -1
  */
 function getIndexOf(str, letter) {
-  if (!str || !letter) {
-    throw new Error('Not implemented');
-  }
   for (let i = 0; i < str.length; i += 1) {
     if (str[i] === letter) {
       return i;
@@ -361,9 +346,6 @@ function isContainNumber(num, digit) {
  *  [1, 2, 3, 4, 5] => -1   => no balance element
  */
 function getBalanceIndex(arr) {
-  if (!arr) {
-    throw new Error('Not implemented');
-  }
   for (let i = 0; i < arr.length; i += 1) {
     let sumLeft = 0;
     let sumRight = 0;
